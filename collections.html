@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <!--Tailwind Css cdn Link-->
+    <link href="
+https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css
+" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--FontAwesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!--Offer Bar-->
+
+    <div class="offer-bar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order
+            <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+<!--Side nav-->
+<section id ="sidenav" class="bg-black text-white fixed z-20 top-0 transition-all duration-1000" style="width:50%;height: 100vh; right:-50% ">
+    <div class="text-right p-5">
+        <p id="closenav" class="inline cursor-pointer">X</p>
+
+    </div>
+    <ul class=" flex flex-col gap-10 items-center text-gray-600 ">
+        <li>
+            <a class="hover:underline" href="./index.html">Home</a>
+        </li>
+        <li>
+            <a class="hover:underline" href="#new-arrival">New Arrival</a>
+        </li>
+        <li>
+            <a class="hover:underline" href="./#most-wanted">Most Wanted</a>
+        </li>
+        <li>
+            <a class="hover:underline" href="./collections.html">Collections</a>
+        </li>
+        <li>
+            <a class="hover:underline" href="./contact.html">Contact Us</a>
+        </li>
+    </ul>
+</section>
+
+    <!--Responsive Nav bar-->
+    <div class="container">
+
+
+        <nav class="p-5 flex items-center justify-between">
+            <h1 class="text-2xl font-bold">Nostra</h1>
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <ul class="gap-10 hidden md:flex">
+                <li>
+                    <a class="hover:underline" href="./index.html">Home</a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="./index.html">New Arrival</a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="./index.html">Most Wanted</a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="./collections.html">Collections</a>
+                </li>
+                <li>
+                    <a class="hover:underline" href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!--Filter--Section-->
+        <div class="divide-section p-4">
+
+            <div class="filter-section">
+                <h3 class="filter-section-occassion text-3xl font-bold">Ocassion</h3>
+                <div>
+                    <input type="checkbox" name="check" value="Summer"> Summer<br>
+                    <input type="checkbox" name="check" value="Party"> Party<br>
+                    <input type="checkbox" name="check" value="Beach"> Beach<br>
+                </div>
+                <h3 class="filter-section-colors text-3xl font-bold">Colors</h3>
+                <div>
+                    <input type="checkbox" name="check" value="Red"> Red<br>
+                    <input type="checkbox" name="check" value="Blue"> Blue<br>
+                    <input type="checkbox" name="check" value="White"> White<br>
+                    <input type="checkbox" name="check" value="Black"> Black
+                </div>
+
+                <h3 class="filter-section-arrivals text-3xl font-bold">Arrivals</h3>
+                <div>
+                    <input type="checkbox" name="check" value="NEW"> New<br>
+                    <input type="checkbox" name="check" value="OLD"> Old<br>
+
+                </div>
+
+
+                <hr class="verticalline">
+            </div>
+            <!--products-->
+            <div class="product-section">
+                <form class="navbar-search">
+                    <input id ="search" type="search" placeholder="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+
+
+                <div class="products"id="productcontainer">
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image1.jfif">
+                        <h1 class="text-2xl font-bold">Dark Red Dress</h1>
+                        <p>₹450</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image2.jfif">
+                        <h1  class="text-2xl font-bold">Frontslit Kurta</h1>
+                        <p>₹350</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image3.jfif">
+                        <h1 class="text-2xl font-bold">Casual Sleeves</h1>
+                        <p>₹250</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image4.jfif">
+                        <h1 class="text-2xl font-bold">Women Multicolor Top</h1>
+                        <p>₹499</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image5.jfif">
+                        <h1 class="text-2xl font-bold">Butterfly Sleeves </h1>
+                        <p>₹500</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image6.jfif">
+                        <h1 class="text-2xl font-bold">Crepe Kurta </h1>
+                        <p>₹750</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image7.jfif">
+                        <h1 class="text-2xl font-bold">Flare Dark Dress</h1>
+                        <p>₹650</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image8.jfif">
+                        <h1 class="text-2xl font-bold">Georgette Dress</h1>
+                        <p>₹399</p>
+
+                    </div>
+                    <div class="product">
+                        <img style="width:18vw;" src="./Images/Image9.jfif">
+                        <h1 class="text-2xl font-bold">METRONAUT Fit Dress</h1>
+                        <p>₹349</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!--Join our News section-->
+        <div class=" news p-4 text-center">
+            <h1 class="text-4xl font-bold">Join Our News Letter</h1><br>
+            <p class="text-3xl">Signup for our email to get exclusive discounts,updates,and more</p>
+            <input type="text" class="border border-black p-1 m-3 w-9/12 inline-block"><br>
+
+            <button class=" newsbutton bg-black text-white text-xl  p-3">Subscribe <i
+                    class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <!--Footer Section-->
+        <div class="footer p-10">
+            <h1 class="font-bold text-5xl">Nostra</h1><br>
+            <p class="text-2xl">The Standard chunk of lorem ipsum used since the 1500s is reprodused below for those
+                interest</P><br>
+            <div class="footer-icon-container">
+                <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+            </div>
+            <p class="text-2xl">@2024 Nostra.com</p>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="collection.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
